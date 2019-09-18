@@ -1,0 +1,10 @@
+<div>
+    <button type="button" class="btn btn-info" (click)="randomize()">Random</button>
+    <button type="button" class="btn btn-info" (click)="switch()">Switch</button>
+
+</div>
+<svg width = 1300 height = 500 >
+    <!-- <ng-container *ngIf='createCanvas'> -->
+        <rect *ngFor="let rectangles of REC" [attr.width]="rectangles.width" [attr.height]="rectangles.height" [attr.transform]="rectangles.transform" [ngStyle]="{'fill': rectangles.style}"></rect>
+    <!-- </ng-container> -->
+</svg>

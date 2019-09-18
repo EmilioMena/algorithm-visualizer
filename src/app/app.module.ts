@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SortOptionComponent } from './sort-option/sort-option.component';
+import { CanvasComponent } from './canvas/canvas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SortOptionComponent
+    SortOptionComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule
